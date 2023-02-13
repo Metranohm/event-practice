@@ -1,6 +1,8 @@
 const btn = document.querySelector('button');
+const reset-btn = document.querySelector('reset-btn');
 const input = document.querySelector('input');
 const ul = document.querySelector('ul');
+const calendar = document.querySelector('.calendar');
 
 btn.addEventListener('click', (evt)=>{
   const li = document.createElement('li');
@@ -13,4 +15,14 @@ ul.addEventListener('click', (evt) => {
   if (evt.target.tagName === 'LI') {
     ul.removeChild(evt.target);
   }
+});
+
+calendar.addEventListener('click', (evt) => {
+  if (evt.target.tagName === 'LI') {
+    calendar.removeChild(evt.target);
+  }
+});
+
+reset-btn.addEventListener('click', (evt) => {
+  ul.innerHTML = '';
 });
