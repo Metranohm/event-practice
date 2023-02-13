@@ -1,5 +1,4 @@
 const btn = document.querySelector('button');
-const reset-btn = document.querySelector('reset-btn');
 const input = document.querySelector('input');
 const ul = document.querySelector('ul');
 const calendar = document.querySelector('.calendar');
